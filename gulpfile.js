@@ -108,10 +108,16 @@ gulp.task('split-css', function () {
             {media: ['none', {minUntil: '576px'}, {max: '9999999px'}], filename: 'main.css'},
 
             // Include CSS rules for medium screen sizes (mostly used on tablet)
-            {media: [{min: '576px', minUntil: '768px'}, {min: '576px', max: '768px'}], filename: 'tablet.css'},
+			{media: [{min: '576px', minUntil: '768px'}, {min: '576px', max: '768px'}], filename: 'tablet-portrait.css'},
+			
+			// Include CSS rules for medium screen sizes (mostly used on tablet-landscape)
+			{media: [{min: '768px', minUntil: '1024px'}, {min: '768px', max: '1024px'}], filename: 'tablet-landscape.css'},
+			
+			// Include CSS rules for medium screen sizes (mostly used on tablet-landscape)
+            {media: [{min: '1024px', minUntil: '1280px'}, {min: '1024px', max: '1280px'}], filename: 'desktop-small.css'},
 
             // Include CSS rules for bigger screen sizes (mostly used on desktop)
-            {media: {min: '768px'}, filename: 'desktop.css'},
+            {media: {min: '1280px'}, filename: 'desktop-large.css'},
         ]))
 		.pipe(gulp.dest('./app/css'))
 		.pipe(filter('**/*.css'))
