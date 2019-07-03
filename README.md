@@ -17,6 +17,9 @@ After cloning the project to your computer run the following command in your ter
 
 	gulp
 
+# Warning
+Please make sure you're using gulp version 4 or bigger.
+
 ## Build
 
 Create a deployment build with the following commands:
