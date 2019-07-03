@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { background: $color-white; font-size: $base-font-size; font-family: $font-primary; line-height: $base-line-height; color: $base-color; min-width: 100%; font-weight: $font-weight; }
+
+ul,
+ol { list-style: none; padding-left: 0; }
+
+a {
+	& { text-decoration: none; color: inherit; }
+	&:hover { text-decoration: none; color: inherit; }
+}
+
+img { border: 0; border: none; max-width: 100%; height: auto; }
+
+h1 { font-size: $h1-font-size; line-height: 1.2; font-family: $font-primary;  margin-top: 0; }
+h2 { font-size: $h2-font-size; line-height: 1.2; font-family: $font-primary;  margin-top: 0; text-transform: uppercase; font-weight: 700; }
+h3 { font-size: $h3-font-size; line-height: 1.2; font-family: $font-primary;  margin-top: 0; }
+h4 { font-size: $h4-font-size; line-height: 1.2;  font-family: $font-primary; margin-top: 0; }
+h5 { font-size: $h5-font-size;  line-height: 1.2; font-family: $font-primary;  margin-top: 0; }
+h6 { font-size: $h6-font-size; line-height: 1.2; font-family: $font-primary; margin-top: 0; }
+
+
+a:focus {
+	& {
+	-webkit-outline-color: 0;
+	   -moz-outline-color: 0;
+	    -ms-outline-color: 0;
+	     -o-outline-color: 0;
+	        outline-color: 0;
+	        -webkit-outline: 0;
+	           -moz-outline: 0;
+	            -ms-outline: 0;
+	             -o-outline: 0;
+	                outline: 0;
+
+    	}
+
+}
+
+img { border: 0; border: none; }

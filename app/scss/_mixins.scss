@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	Mixins
+\* ------------------------------------------------------------ */
+
+@mixin title-style {
+	text-align: center; 
+	text-transform: uppercase;
+	position: relative; 
+	color: $font-color;
+	padding-bottom: 20px;
+
+	:before {
+		content: '';
+		position: absolute; 
+		bottom: 0;
+		left: 50%;
+		margin-left: -43px;
+		width: 86px;
+		height: 3px;
+		background-color: #dfe8ed;    
+	} 
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
