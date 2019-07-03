@@ -10,7 +10,7 @@ Starting project with media queries splitter included. The purpose of this repo 
 
 After cloning the project to your computer run the following command in your terminal to install all required node packages.
 
-	1.  npm install
+	npm install
 		
 
 ## Start

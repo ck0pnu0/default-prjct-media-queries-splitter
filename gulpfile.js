@@ -124,10 +124,10 @@ gulp.task('split-css', gulp.series(function (done) {
 			{media: [{min: '768px', minUntil: '1024px'}, {min: '768px', max: '1024px'}], filename: 'tablet-landscape.css'},
 			
 			// Include CSS rules for medium screen sizes (mostly used on tablet-landscape)
-            {media: [{min: '1024px', minUntil: '1280px'}, {min: '1024px', max: '1280px'}], filename: 'desktop-small.css'},
+            {media: [{min: '1024px', minUntil: '1200px'}, {min: '1024px', max: '1200px'}], filename: 'desktop-small.css'},
 
             // Include CSS rules for bigger screen sizes (mostly used on desktop)
-            {media: {min: '1280px'}, filename: 'desktop-large.css'},
+            {media: {min: '1200px'}, filename: 'desktop-large.css'},
         ]))
 		.pipe(gulp.dest('./app/css'));
 		done();
