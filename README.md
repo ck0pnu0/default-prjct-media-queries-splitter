@@ -17,7 +17,7 @@ After cloning the project to your computer run the following command in your ter
 
 	gulp
 
-# Warning
+### Warning
 Please make sure you're using gulp version 4 or bigger.
 
 ## Build
